@@ -1,0 +1,13 @@
+# Composer / PHP
+/vendor/
+/composer.lock
+
+# Node
+/node_modules/
+
+# OS
+.DS_Store
+
+# Omeka generated
+/files/
+/tmp/
