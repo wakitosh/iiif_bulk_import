@@ -11,3 +11,6 @@
 # Omeka generated
 /files/
 /tmp/
+
+# Local helper scripts (secrets)
+.git-askpass.sh
