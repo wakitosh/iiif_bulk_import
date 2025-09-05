@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ruleset name="IiifBulkImport">
+  <description>Minimal coding standard for IiifBulkImport.</description>
+
+  <!-- Base standard -->
+  <rule ref="PSR12" />
+
+  <!-- Encoding -->
+  <arg name="encoding" value="utf-8" />
+
+  <!-- File extensions -->
+  <arg name="extensions" value="php" />
+
+  <!-- Exclude vendor, node_modules just in case -->
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+  <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+  <!-- Line length: warn at 120 to avoid over-aggressive wrapping -->
+  <rule ref="Generic.Files.LineLength">
+    <properties>
+      <property name="lineLimit" value="120" />
+      <property name="absoluteLineLimit" value="0" />
+      <property name="ignoreComments" value="true" />
+    </properties>
+  </rule>
+
+</ruleset>
