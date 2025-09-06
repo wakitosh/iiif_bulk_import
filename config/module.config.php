@@ -9,6 +9,7 @@ use IiifBulkImport\Controller\Admin\ImportController;
 use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Segment;
 use IiifBulkImport\Form\ManifestImportForm;
+use IiifBulkImport\Form\ConfigForm;
 use Laminas\ServiceManager\Factory\InvokableFactory;
 
 return [
@@ -66,6 +67,7 @@ return [
   'form_elements' => [
     'factories' => [
       ManifestImportForm::class => InvokableFactory::class,
+      ConfigForm::class => InvokableFactory::class,
     ],
   ],
 
